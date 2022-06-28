@@ -8,21 +8,20 @@
 import Foundation
 import AWSDK
 
-internal class AWSDKHelper : UIResponder, UIApplicationDelegate, AWControllerDelegate {
+class AWSDKHelper : AWControllerDelegate {
     
     static let shared: AWSDKHelper = .init()
     //lazy private var controller = AWController.clientInstance()
         
-    internal func startController() {
+    func startController() {
         let awcontroller = AWController.clientInstance()
-        awcontroller.callbackScheme = "myCallbackScheme"
+        awcontroller.callbackScheme = "iosFrameworkSample"
         awcontroller.delegate = self
         awcontroller.start()
     }
     
     func controllerDidFinishInitialCheck(error: NSError?) {
         
-        print("Inside controllerDidFinishInitialCheck")
         if error != nil {
             AWLogError("Initial Check Done Error: \(String(describing: error)))")
         return

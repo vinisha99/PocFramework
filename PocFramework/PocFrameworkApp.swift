@@ -6,31 +6,30 @@
 //
 
 import SwiftUI
-import AWSDK
 
 @main
 struct PocFrameworkApp : App {
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup() {
             ContentView()
+                .onOpenURL{ url in
+                    PocFrameworkMain.shared.onOpenUrl(url: url)
+                }
+
         }
     }
     
 }
 
-public class PocFrameworkMain {
+class AppDelegate : UIResponder, UIApplicationDelegate {
     
-    public func getDisplayText() -> String {
-        return "Hello World"
-    }
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
-    func onOpenUrl(url : URL) {
-        let sourceApplication = url.user
-        let handedBySDKController = AWController
-                                    .clientInstance()
-                                    .handleOpenURL(url, fromApplication: sourceApplication)
-        print("Handed over to AWController: \(handedBySDKController)")
+        AWSDKHelper.shared.startController()
+        return true
     }
     
 }

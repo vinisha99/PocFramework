@@ -13,6 +13,7 @@
 		AB7B0631286A1363007DCAA6 /* AWSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AB7B0630286A1363007DCAA6 /* AWSDK */; };
 		AB7B0633286B319D007DCAA6 /* AWSDKHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B0632286B319D007DCAA6 /* AWSDKHelper.swift */; };
 		AB7B06A8286B90BA007DCAA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B06A7286B90BA007DCAA6 /* ContentView.swift */; };
+		AB7B06AD286B98D2007DCAA6 /* PocFrameworkMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B06AC286B98D2007DCAA6 /* PocFrameworkMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AB7B0632286B319D007DCAA6 /* AWSDKHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSDKHelper.swift; sourceTree = "<group>"; };
 		AB7B0650286B38B8007DCAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AB7B06A7286B90BA007DCAA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB7B06AC286B98D2007DCAA6 /* PocFrameworkMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocFrameworkMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				AB7B0650286B38B8007DCAA6 /* Info.plist */,
 				AB7B0621286A12F8007DCAA6 /* PocFrameworkApp.swift */,
 				AB7B0632286B319D007DCAA6 /* AWSDKHelper.swift */,
+				AB7B06AC286B98D2007DCAA6 /* PocFrameworkMain.swift */,
 				AB7B06A7286B90BA007DCAA6 /* ContentView.swift */,
 				AB7B0625286A12FA007DCAA6 /* Assets.xcassets */,
 				AB7B0627286A12FA007DCAA6 /* Preview Content */,
@@ -152,6 +155,7 @@
 			files = (
 				AB7B0633286B319D007DCAA6 /* AWSDKHelper.swift in Sources */,
 				AB7B0622286A12F8007DCAA6 /* PocFrameworkApp.swift in Sources */,
+				AB7B06AD286B98D2007DCAA6 /* PocFrameworkMain.swift in Sources */,
 				AB7B06A8286B90BA007DCAA6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocFramework/Preview Content\"";
-				DEVELOPMENT_TEAM = WHHL3JA4FX;
+				DEVELOPMENT_TEAM = N34E47Y98M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PocFramework/Info.plist;
@@ -311,7 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocFramework/Preview Content\"";
-				DEVELOPMENT_TEAM = WHHL3JA4FX;
+				DEVELOPMENT_TEAM = N34E47Y98M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PocFramework/Info.plist;
